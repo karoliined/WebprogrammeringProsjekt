@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+html{
+    height: 100%;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -11,7 +15,8 @@
     background-color: rgb(0, 0, 0);
     margin: 0;
     padding: 0.5em;
-    position: relative;
+    position: fixed;
+    z-index: 1;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -38,6 +43,7 @@
 
 body {
   margin: auto;
+  height: 100%;
   width: 100%;
   padding: 0px;
   background-image: linear-gradient(to bottom left,rgb(65, 52, 66), rgb(241, 214, 238));
@@ -58,12 +64,12 @@ main {
     box-shadow: 0 0 10px;
 }
 
-.banner{
-    min-height: 100%;
-    width: 100%;
-    height: auto;
-    
-
+.bannercontainer{
+  background-image: url("images/velkommen1.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .image {
