@@ -71,6 +71,8 @@ main {
     padding: 20px;
     background-image: linear-gradient(to bottom left,rgb(0, 0, 0), rgb(241, 214, 238));
     background-attachment:fixed;
+    border: 2px solid white;
+    border-radius: 5px;
 }
 
 body {
