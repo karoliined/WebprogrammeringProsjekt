@@ -51,7 +51,7 @@ main {
     width: 90%;
     max-width: 800px;
     padding: 40px;
-    background-attachment:fixed;
+    background-attachment:scroll;
     background-color: white;
     border-radius: 5px;
     -webkit-box-shadow: 0 0 10px;
