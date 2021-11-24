@@ -12,7 +12,6 @@ body {
     margin: auto;
     height: 100%;
     width: 100%;
-    padding: 0px;
     background-image: linear-gradient(to bottom left,rgb(65, 52, 66), rgb(241, 214, 238));
     background-attachment:fixed;
   }
@@ -24,7 +23,6 @@ body {
     background-color: rgb(0, 0, 0);
     margin: 0;
     padding: 0.5em;
-
     position: fixed;
     top: 0;
     z-index: 1;
@@ -55,19 +53,19 @@ body {
 main {
     margin: auto;
     margin-top: 100px;
-    bottom: 30px;
     width: 90%;
     max-width: 800px;
     padding: 40px;
     background-attachment:fixed;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     -webkit-box-shadow: 0 0 10px;
     box-shadow: 0 0 10px;
 }
 
 .bannercontainer{
   margin: 0;
+  margin-bottom: -60px;
   background-image: url("images/velkommen1-crop.jpg");
   height: 100%; 
   position: relative;
@@ -111,4 +109,12 @@ h2{
 section{
     position: relative;
     width: 100%;
+}
+
+footer{
+
+    background-color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    margin-top: 30px;
+    padding: 5px;
 }
