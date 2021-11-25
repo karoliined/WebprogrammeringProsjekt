@@ -99,16 +99,19 @@ section{
 
 #drinker {
   overflow: hidden;
+  width: 10%;
 }
 #drinker figure {
-  position: relative;
-  width: 900%;
+  position: absolute;
+  top: 60px;
+  left: 80px;
+  width: 1000%;
   margin: 0;
   left: 0;
-  animation: 25s drinker infinite;
+  animation: 30s drinker infinite;
 }
 #drinker figure img {
-width: 11%;
+width: 10%;
 float: left;
 }
 
@@ -116,58 +119,64 @@ float: left;
   0% {
     left: 0;
   }
-  8.3% {
+  7.5% {
     left: 0;
   }
-  11.1% {
+  10% {
     left: -100%;
   }
-  19.4% {
+  17.5% {
     left: -100%;
   }
-  22.2% {
+  20% {
     left: -200%;
   }
-  30.5% {
+  27.5% {
     left: -200%;
   }
-  33.3% {
+  30% {
     left: -300%;
   }
-  41.6% {
+  37.5% {
     left: -300%;
   }
-  44.4% {
+  40% {
     left: -400%;
   }
-  52.7% {
+  47.5% {
     left: -400%;
   }
-  55.5% {
+  50% {
     left: -500%;
   }
-  63.8% {
+  57.5% {
     left: -500%;
   }
-  66.6% {
+  60% {
     left: -600%;
   }
-  74.9% {
+  67.5% {
     left: -600%;
   }
-  77.7% {
+  70% {
     left: -700%;
   }
-  86% {
+  77.5% {
     left: -700%;
   }
-  88.8% {
+  80% {
     left: -800%;
   }
-  97.1% {
+  87.5% {
     left: -800%;
+  }
+  90% {
+    left: -900%;
+  }
+  97.5% {
+    left: -900%;
   }
   100% {
-    left: -900%;
+    left: -1000%;
   }
 }
