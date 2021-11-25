@@ -105,12 +105,14 @@ section{
   position: absolute;
   top: 60px;
   left: 80px;
+  width: 500px;
   width: 1000%;
   margin: 0;
   left: 0;
   animation: 30s drinker infinite;
 }
 #drinker figure img {
+width: 500px;
 width: 10%;
 float: left;
 }
