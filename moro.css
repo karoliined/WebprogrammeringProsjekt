@@ -97,47 +97,77 @@ section{
     width: 100%;
 }
 
-.slider {
-    overflow: hidden;
-  }
-.slider figure {
-    position: relative;
-    width: 50%;
-    margin: 0;
+#drinker {
+  overflow: hidden;
+}
+#drinker figure {
+  position: relative;
+  width: 900%;
+  margin: 0;
+  left: 0;
+  animation: 25s drinker infinite;
+}
+#drinker figure img {
+width: 11%;
+float: left;
+}
+
+@keyframes drinker {
+  0% {
     left: 0;
-    animation: 20s slideshow infinite;
   }
-.slider figure img {
-  width: 20%;
-  float: left;
+  8.3% {
+    left: 0;
   }
-  
-  @keyframes slider {
-    0% {
-      left: 0;
-    }
-    20% {
-      left: 0;
-    }
-    25% {
-      left: -100%;
-    }
-    45% {
-      left: -100%;
-    }
-    50% {
-      left: -200%
-    }
-    70% {
-      left: -200%;
-    }
-    75% {
-      left: -300%;
-    }
-    95% {
-      left: -300%
-    }
-    100% {
-      left: -400%
-    }
+  11.1% {
+    left: -100%;
   }
+  19.4% {
+    left: -100%;
+  }
+  22.2% {
+    left: -200%;
+  }
+  30.5% {
+    left: -200%;
+  }
+  33.3% {
+    left: -300%;
+  }
+  41.6% {
+    left: -300%;
+  }
+  44.4% {
+    left: -400%;
+  }
+  52.7% {
+    left: -400%;
+  }
+  55.5% {
+    left: -500%;
+  }
+  63.8% {
+    left: -500%;
+  }
+  66.6% {
+    left: -600%;
+  }
+  74.9% {
+    left: -600%;
+  }
+  77.7% {
+    left: -700%;
+  }
+  86% {
+    left: -700%;
+  }
+  88.8% {
+    left: -800%;
+  }
+  97.1% {
+    left: -800%;
+  }
+  100% {
+    left: -900%;
+  }
+}
