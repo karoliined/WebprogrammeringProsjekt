@@ -37,6 +37,7 @@
       text-decoration: underline;
 }
 
+
 body {
   margin: auto;
   width: 100%;
@@ -92,78 +93,77 @@ h2{
     font-size: 1.6em;
 }
 
-section{
-    position: relative;
-    width: 100%;
-}
-
 #drinker {
   overflow: hidden;
 }
 #drinker figure {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   position: absolute;
-  top: 60px;
-  left: 60px;
-  width: 800%;
+  top: 103.5vw;
+  width: 100%;
   margin: 0;
   left: 0;
   animation: 20s drinker infinite;
+ /* animation-timing-function: linear; */
 }
 #drinker figure img {
-width: 10%;
+width: 12.5%;
 float: left;
+opacity: 0.92;
+margin-left: 100vw;
 }
 
 @keyframes drinker {
-  0% {
-    left: 0;
-  }
-  10% {
-    left: 0;
-  }
-  12.5% {
-    left: -100%;
-  }
-  22.5% {
-    left: -100%;
-  }
-  25% {
-    left: -200%;
-  }
-  35% {
-    left: -200%;
-  }
-  37.5% {
-    left: -300%;
-  }
-  47.5% {
-    left: -300%;
-  }
-  50% {
-    left: -400%;
-  }
-  60% {
-    left: -400%;
-  }
-  62.5% {
-    left: -500%;
-  }
-  72.5% {
-    left: -500%;
-  }
-  75% {
-    left: -600%;
-  }
-  85% {
-    left: -600%;
-  }
-  87.5% {
-    left: -700%;
-  }
-  97.5% {
-    left: -700%;
-  }
-  100% {
-    left: -800%;
-  }
+  0% {left: 0vw;}
+  12.5% {left: -50vw;}
+  25% {left: -162vw;}
+  37.5% {left: -274vw;}
+  50% {left: -386vw;}
+  62.5% {left: -498vw;}
+  75% {left: -610vw;}
+  87.5% {left: -722vw;}
+  100% {left: -785vw;}
+
 }
+
+.oppskrifter {
+  overflow:hidden;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  background-color: red;
+
+  
+  
+}
+.oppskrifter figure {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: absolute;
+  top: 90.5vw;
+  width: 100%;
+  margin: 0;
+  left: 0;
+  animation: 20s oppskrifter infinite;
+ /* animation-timing-function: linear; */
+}
+.oppskrifter figure div{
+  width: 12.5%;
+  float: left;
+  opacity: 0.92;
+  margin-left: 100vw;
+}
+@keyframes oppskrifter {
+  0% {left: 0vw;}
+  12.5% {left: -50vw;}
+  25% {left: -162vw;}
+  37.5% {left: -274vw;}
+  50% {left: -386vw;}
+  62.5% {left: -498vw;}
+  75% {left: -610vw;}
+  87.5% {left: -722vw;}
+  100% {left: -785vw;}
+}
+
