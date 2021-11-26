@@ -74,24 +74,21 @@ main {
 
 p{
     font-family: 'Roboto', sans-serif;
-    font-size: 1.1em;
+    font-size: 0.8em;
     text-align: flex-start;
     line-height: 1.5em;
-    background-color: white;
 }
 
 h1,h2,h3,h4,h5{
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    /* background-color: white; */
+
 }
 
 h1{
-    font-size: 2.2em;
+    font-size: 1em;
     margin-top: 0px;
-}
-
-h2{
-    font-size: 1.6em;
 }
 
 #drinker {
@@ -129,42 +126,38 @@ margin-left: 100vw;
 
 }
 
-.oppskrifter {
-  overflow:hidden;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.5em;
-  background-color: red;
+#oppskrifter {
+  overflow:hidden;}
 
-  
-  
-}
-.oppskrifter figure {
+#oppskrifter figure {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   position: absolute;
-  top: 90.5vw;
-  width: 100%;
+  top: 70vw;
   margin: 0;
   left: 0;
   animation: 20s oppskrifter infinite;
  /* animation-timing-function: linear; */
 }
-.oppskrifter figure div{
-  width: 12.5%;
+#oppskrifter div{
+  width: 30vw;
   float: left;
-  opacity: 0.92;
   margin-left: 100vw;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
 }
 @keyframes oppskrifter {
   0% {left: 0vw;}
-  12.5% {left: -50vw;}
-  25% {left: -162vw;}
-  37.5% {left: -274vw;}
-  50% {left: -386vw;}
-  62.5% {left: -498vw;}
-  75% {left: -610vw;}
-  87.5% {left: -722vw;}
-  100% {left: -785vw;}
+  12.5% {left: -58vw;}
+  25% {left: -188vw;}
+  37.5% {left: -318vw;}
+  50% {left: -506vw;}
+  62.5% {left: -694vw;}
+  75% {left: -882vw;}
+  87.5% {left: -1070vw;}
+  100% {left: -1258vw;}
 }
 
