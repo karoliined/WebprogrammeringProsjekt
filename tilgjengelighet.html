@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Eksamensgruppe 9999">
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Gruppe 99 Eksamen</title>
+  <title>Gruppe 9999 Eksamen</title>
   <link rel="stylesheet" type="text/css" href="index.css"/>
 </head>
 
@@ -25,57 +25,56 @@
   </header>
 
   <main>
-    <!-- Hovedinnhold (flexbox) -->
+    <!-- Hovedinnhold -->
     <section>
       <!-- Essay Tittel -->
       <h1>Tilgjengelighet</h1>
     </section>
     <!-- Essay innhold -->
     <section>
-      <h2>Første seksjon</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Fusce pulvinar sed lacus quis mollis. Maecenas id porta ex. 
-        Proin feugiat cursus feugiat. In mattis eu neque ac auctor. 
-        Proin ultricies lacinia felis, et tempus lectus pharetra non. 
-        Donec ac nisi lorem. Integer varius, lacus in malesuada accumsan, 
-        urna est consectetur turpis, ut interdum est ex id augue. 
-        Etiam interdum est arcu, sed efficitur dui consectetur at. 
-        Proin gravida condimentum egestas. Cras nec pellentesque est, 
-        ac porttitor nulla. Aliquam eu mauris et odio ultrices lacinia at 
-        venenatis est. Nunc consectetur quam eget ultricies tincidunt.</p>
-      <img src="images/image-3.jpeg" class = "image" alt="An AI-generated person with more description than the title" title="A Portrait of a Person">
+      <h2></h2>
+      <p>Det første vi gjorde for å gjøre nettstedet vårt så tilgjengelig som mulig var å strukturere HTMLkoden vår 
+        ved å bruke riktige semantiske HTML tags der det var mulig. Noen eksempler på dette er bruk av tags slik 
+        som /main/ og /section/, samtidig som vi sørget for at overskriftene (h1, h2, etc) var riktig strukturert og 
+        brukt i riktig sammenheng. Vi skrev også kommentarer i hele CSS-filen vår, og HTML-filene våre for at det
+        skulle være lettere for nestemann å lese igjennom og forstå hva vi hadde gjort. Alle bildene på nettstedet 
+        vårt inkluderer titler og alternativ tekst, og vi har gitt klare titler til alle lenker som er inkludert på nettsiden.  </p>
+      <img src="images/tilgjengelighet-1.png" class = "image" alt="Utklipp av Axe første test, flere feil." title="Axe første utklipp">
     </section>
     <section>
-      <h2>Andre seksjon</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Fusce pulvinar sed lacus quis mollis. Maecenas id porta ex. 
-        Proin feugiat cursus feugiat. In mattis eu neque ac auctor. 
-        Proin ultricies lacinia felis, et tempus lectus pharetra non. 
-        Donec ac nisi lorem. Integer varius, lacus in malesuada accumsan, 
-        urna est consectetur turpis, ut interdum est ex id augue. 
-        Etiam interdum est arcu, sed efficitur dui consectetur at. 
-        Proin gravida condimentum egestas. Cras nec pellentesque est, 
-        ac porttitor nulla. Aliquam eu mauris et odio ultrices lacinia at 
-        venenatis est. Nunc consectetur quam eget ultricies tincidunt.</p>
-      <img src="images/image-2.jpeg" class = "image" alt="An AI-generated person with more description than the title" title="A Portrait of a Person">
+      <h2></h2>
+      <p>Under prosessen med å lage nettstedet sjekket vi koden vår med en automatisert tilgjengelighetstest
+        kalt "Axe". En advarsel vi mottok var å sjekke fargekontrasten mellom titlene og bakgrunnen vår,
+        dette var enkelt å implementere og fikse. Vi holdt kontraster i tankene da vi designet resten av nettsidene. 
+        Da vi var ferdige med nettstedet, sjekket vi det igjen med Axe tilgjengelighetstest. Denne gangen fikk vi en  
+        "moderat" advarsel om at en vi hadde en HTML-innhold som ikke lå inne i en /container/. 
+        Dette var "destinasjonsside" -delen av forsiden, et bannerbilde og litt tekst for å ønske folk velkommen til nettsiden.
+        Vi ser nå at dette ikke var den riktige måten å gjennomføre dette på. På grunn av måten vi har kodet nettsiden vår på,
+        kan vi imidlertid ikke enkelt flytte denne kodedelen til enten "header" eller "main". Dette er noe vi vil forbedre neste gang.  </p>
+      <img src="images/tilgjengelighet-2.png" class = "image" alt= "Utklipp av Axe andre test, utbedret feilene." title="Axe andre utklipp">
     </section>
     <section>
-      <h2>Tredje section</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-        Fusce pulvinar sed lacus quis mollis. Maecenas id porta ex. 
-        Proin feugiat cursus feugiat. In mattis eu neque ac auctor. 
-        Proin ultricies lacinia felis, et tempus lectus pharetra non. 
-        Donec ac nisi lorem. Integer varius, lacus in malesuada accumsan, 
-        urna est consectetur turpis, ut interdum est ex id augue. 
-        Etiam interdum est arcu, sed efficitur dui consectetur at. 
-        Proin gravida condimentum egestas. Cras nec pellentesque est, 
-        ac porttitor nulla. Aliquam eu mauris et odio ultrices lacinia at 
-        venenatis est. Nunc consectetur quam eget ultricies tincidunt.</p>
-      <img src="images/image.jpeg" class = "image" alt="An AI-generated person with more description than the title" title="A Portrait of a Person">
+      <h2></h2>
+      <p>Etter å ha kjørt tilgjengelighetstesten Axe, kjørte vi HTML-koden vår gjennom en HTML-validator.
+        Forsiden på nettstedet vårt ga oss 10 feil, men 9 av disse var bare at den ikke kjente igjen norske karakterer(æ,ø,å).
+        Den tiende feilen var relatert til vårt forrige problem med bannerbildet og teksten nevnt tidligere. 
+        Vi hadde brukt en "H1"-tag til å skrive "Velkommen", men vi hadde allerede brukt en "H1" -tag et annet sted på siden. 
+        Vi fikset dette ved å endre teksten til en vanlig "p"-kode, og ga den en CSS-ID for å style den.  </p>
+      <img src="images/tilgjengelighet-3.png" class = "image" alt="HTML validator test  med noen feil og advarsler." title="HTML validator utklipp">
     </section>
+    <section>
+      <h2></h2>
+      <p>
+      Vi kjørte deretter CSS-filen vår gjennom en CSS-validator. Denne prosessen ga oss 5 advarsler, 
+      som alle var i stand til å bli forkastet. Den ga oss også to feil, vi hadde skrevet "tekst-align: flex-start"
+      og "flex-direction: center", hvor ingen av de er gyldige. De hadde tydeligvis ingen innvirkning på koden vår,
+      så vi fjernet ganske enkelt begge linjene.</p> 
+      <img src="images/tilgjengelighet-4.png" class = "image" alt="CSS test som viste to feil i koden." title="CSS validator utklipp">
+    </section>
+
 </main>
 <footer>
-  <p>2021 - Gruppe 99 </p>
+  <p>2021 - Gruppe 9999 </p>
 </footer>
 </body>
 

@@ -11,9 +11,7 @@ html{
 body {
     margin: auto;
     width: 100%;
-    /* background-image: linear-gradient(to bottom left,rgb(65, 52, 66), rgb(241, 214, 238)); */
     background-attachment:fixed;
-
     background-image: url("images/Curve Line.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -62,6 +60,7 @@ header{
 /*Velkommen*/
 .landingtext{
   font-size: 5em; 
+  font-weight: bold;
   color: #ecc7e8;
   text-shadow: 3px 3px #413442;
   margin: 0;
@@ -71,6 +70,7 @@ header{
  -ms-transform: translate(-50%, -50%);
  transform: translate(-50%, -50%);
 }
+
 /*Velkomstbildet til siden*/
 .bannercontainer{
   margin: 0;
@@ -102,7 +102,6 @@ main {
 p{
     font-family: 'Roboto', sans-serif;
     font-size: 1.1em;
-    text-align: flex-start;
     line-height: 1.5em;
 }
 /*størrelse + font*/
@@ -110,33 +109,31 @@ h1,h2,h3,h4,h5{
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
-
-/*størrelse*/
 h1{
     font-size: 2.2em;
     margin-top: 0px;
 }
-
-/*størrelse*/
 h2{
     font-size: 1.6em;
 }
+
 /*størrelse / utseende på bildene våres*/
 .image {
   position: relative;
   display: flex;
   width: 100%;
-  flex-direction: center;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   object-fit: cover;
 }
+
 /*Section er relativ til "Main" sine rammer.*/
 section{
     position: relative;
     width: 100%;
 }
+
 /*Liten footer for prikken over i`en*/
 footer{
     background-color: rgba(255, 255, 255, 0.4);

@@ -3,53 +3,55 @@
 * {
   box-sizing: border-box;
 }
-  
-.navbar {    
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
-    width: 100%;
-    background-color: black;
-    margin: 0;
-    padding: 0.5em;
-    position: fixed;
-    z-index: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-}
-@media screen and (max-width: 768px){
-  .navbar{
-    font-size: 1em;
-  }
-}
-  
-.navbar > li > a {
-      display: fixed;
-      color: lightgrey;
-      text-decoration: none;
-      will-change: transform, color, text-decoration;
-      transition: 250ms all ease-out;
-      position: relative;
-      padding: 8px 16px;
-}
-  
-.navbar > li > a:hover {
-      transform: scale(1.1);
-      perspective: 200px;
-      color: white;
-      text-decoration: underline;
+
+main {
+	position:relative;
+	overflow-x:hidden;
 }
 
-
+/* Oragniserer bakgrunnen og hoved"kroppen" til siden */
 body {
   margin: auto;
   width: 100%;
   background-color: rgb(17, 21, 14);
 }
 
+/*alt av navbar */
 
+
+.navbar {    
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  width: 100%;
+  background-color: black;
+  margin: 0;
+  padding: 0.9em;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar > li > a {
+    display: fixed;
+    color: lightgrey;
+    text-decoration: none;
+    will-change: transform, color, text-decoration;
+    transition: 250ms all ease-out;
+    position: relative;
+    padding: 8px 16px;
+}
+
+.navbar > li > a:hover {
+    transform: scale(1.1);
+    perspective: 200px;
+    color: white;
+    text-decoration: underline;
+}
+/*størrelse / utseende på bildene våres*/
 .image {
     position: sticky;
     display: flex;
@@ -61,7 +63,7 @@ body {
     flex-wrap: wrap;
     object-fit: cover;
   }
-
+/*Størrele og font*/
 p{
     font-family: 'Roboto', sans-serif;
     font-size: 0.8em;
@@ -69,16 +71,19 @@ p{
     line-height: 1.5em;
 }
 
+/*Størrele og font*/
 h1{
   font-family: 'Roboto', sans-serif;
   text-align: center;
     font-size: 1em;
     margin-top: 0px;
 }
-
+/*Karusellen (bilder)*/
+/*Gjemmer bildene som går mot venstre når de er ute av skjermen*/
 #drinker {
   overflow: hidden;
 }
+/*Plassering, størrelse etc av karusell bildene*/
 #drinker figure {
   display: flex;
   flex-direction: row;
@@ -91,13 +96,14 @@ h1{
   animation: 20s drinker infinite;
  /* animation-timing-function: linear; */
 }
+/*Bredden på bilder og hvilken vei de skal lytte seg mot*/
 #drinker figure img {
 width: 12.5%;
 float: left;
 opacity: 0.92;
 margin-left: 100vw;
 }
-
+/*Hvordan bildene beveger seg etter #keyframes*/
 @keyframes drinker {
   0% {left: 0vw;}
   12.5% {left: -50vw;}
@@ -109,10 +115,11 @@ margin-left: 100vw;
   87.5% {left: -722vw;}
   100% {left: -885vw;}
 }
-
+/*Karusellen (tekst)*/
+/*Gjemmer tekst som går mot venstre når de er ute av skjermen*/
 #oppskrifter {
   overflow:hidden;}
-
+/*Hvordan teksten er satt opp uten wrap, plassering på tekst boksen og "animation" sin tidssrom*/
 #oppskrifter figure {
   display: flex;
   flex-direction: row;
@@ -124,6 +131,7 @@ margin-left: 100vw;
   animation: 20s oppskrifter infinite;
  /* animation-timing-function: linear; */
 }
+/*Størrelse på "boksen" til teksten, samt farge og andre estetiske elementer*/
 #oppskrifter div{
   width: 30vw;
   float: left;
@@ -133,6 +141,8 @@ margin-left: 100vw;
   border-radius: 10px;
   text-align: center;
 }
+
+/*Hvordan teksten beveger seg etter #keyframes, i takt med bildene*/
 @keyframes oppskrifter {
   0% {left: 0vw;}
   12.5% {left: -58vw;}
@@ -145,3 +155,11 @@ margin-left: 100vw;
   100% {left: -1000vw;}
 }
 
+/*Endrer tekst størrelse ved 768px skjerm, slik at 
+teksten ikke blir for stor*/
+@media screen and (max-width: 768px){
+  .navbar{
+    font-size: 1em;
+  }
+}
+  
