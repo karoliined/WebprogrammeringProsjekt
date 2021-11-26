@@ -8,7 +8,7 @@
     font-family: 'Roboto', sans-serif;
     font-size: 1.5em;
     width: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: black;
     margin: 0;
     padding: 0.5em;
     position: fixed;
@@ -46,24 +46,9 @@
 body {
   margin: auto;
   width: 100%;
-  padding: 0px;
-  background-image: linear-gradient(to bottom left,rgb(65, 52, 66), rgb(241, 214, 238));
-  background-attachment:fixed;
+  background-color: rgb(17, 21, 14);
 }
 
-main {
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    width: 90%;
-    max-width: 800px;
-    padding: 40px;
-    background-attachment:scroll;
-    background-color: white;
-    border-radius: 5px;
-    -webkit-box-shadow: 0 0 10px;
-    box-shadow: 0 0 10px;
-}
 
 .image {
     position: sticky;
@@ -84,14 +69,9 @@ p{
     line-height: 1.5em;
 }
 
-h1,h2,h3,h4,h5{
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    /* background-color: white; */
-
-}
-
 h1{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
     font-size: 1em;
     margin-top: 0px;
 }
@@ -127,8 +107,7 @@ margin-left: 100vw;
   62.5% {left: -498vw;}
   75% {left: -610vw;}
   87.5% {left: -722vw;}
-  100% {left: -785vw;}
-
+  100% {left: -885vw;}
 }
 
 #oppskrifter {
@@ -139,7 +118,7 @@ margin-left: 100vw;
   flex-direction: row;
   flex-wrap: nowrap;
   position: absolute;
-  top: 70vw;
+  top: 123vw;
   margin: 0;
   left: 0;
   animation: 20s oppskrifter infinite;
@@ -159,10 +138,10 @@ margin-left: 100vw;
   12.5% {left: -58vw;}
   25% {left: -188vw;}
   37.5% {left: -318vw;}
-  50% {left: -448vw;}
+  50% {left: -447vw;}
   62.5% {left: -577vw;}
-  75% {left: -650vw;}
-  87.5% {left: -1070vw;}
-  100% {left: -1258vw;}
+  75% {left: -707vw;}
+  87.5% {left: -837vw;}
+  100% {left: -1000vw;}
 }
 
